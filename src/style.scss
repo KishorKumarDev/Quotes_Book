@@ -1,0 +1,242 @@
+.App {
+  background-color: #5f7fe7;
+  height: 100vh;
+
+  .Container {
+    background-color: #a7bcff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .ContainerQuoteList {
+      background-color: #a7bcff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+    }
+
+    .ContainerAddQuote {
+      background-color: #a7bcff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+
+    }
+
+  }
+
+  .list {
+    background-color: #a7bcff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .text {
+      background-color: white;
+      padding: 20px 60px;
+      border-radius: 10px;
+      color: #5d5b8d;
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
+
+  .QuoteList {
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 100vh;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    max-width: 80%;
+
+    h2 {
+      margin-top: 8px;
+      background-color: white;
+      padding: 8px 8px;
+      border-radius: 13px;
+
+    }
+
+
+    .QuoteItems {
+      gap: 10px;
+      // display:grid;
+      // grid-template-columns:subgrid;
+      // background-color:white;
+      // padding:3px 5px;
+      // border-radius: 0px 10px 10px 10px;
+    }
+
+  }
+
+  .QuoteForm {
+    background-color: white;
+    padding: 20px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    .logo {
+      color: #5d5b8d;
+      font-weight: bold;
+      font-size: 24px;
+
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      input {
+        padding: 12px;
+        border: none;
+        border-bottom: 1px solid #a7bcff;
+
+        &::placeholder {
+          color: rgb(175, 175, 175);
+        }
+      }
+
+      textarea {
+        padding: 12px;
+        border: none;
+        border-bottom: 1px solid #a7bcff;
+
+        &::placeholder {
+          color: rgb(175, 175, 175);
+        }
+
+      }
+
+      button {
+        background-color: #5d5b8d;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+      }
+
+    }
+  }
+
+  .QuoteItems {
+    background-color: white;
+    min-width: 80%;
+    padding: 3px 5px;
+    border-radius: 0px 10px 10px 10px;
+
+    .quoteItems {
+
+      blockquote {
+        font-family: cursive;
+        font-weight: 500;
+        display: flex;
+        justify-content: flex-start;
+
+      }
+
+      p {
+        display: flex;
+        justify-content: flex-end;
+        font-style: italic;
+        font-family: monospace;
+
+      }
+
+      .butt {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        button {
+          border: none;
+          padding: 7px 7px;
+          color: white;
+          border-radius: 10px;
+          background-color: #5d5b8d;
+          font-size: 14px;
+          gap: 10px;
+          cursor: pointer;
+
+        }
+      }
+
+
+    }
+
+  }
+
+  .EditQuoteForm {
+    background-color: white;
+    padding: 20px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    .logo {
+      color: #5d5b8d;
+      font-weight: bold;
+      font-size: 24px;
+
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      input {
+        padding: 12px;
+        border: none;
+        border-bottom: 1px solid #a7bcff;
+
+        &::placeholder {
+          color: rgb(175, 175, 175);
+        }
+      }
+
+      button {
+        border: none;
+        padding: 10px 15px;
+        color: white;
+        border-radius: 10px;
+        background-color: #5d5b8d;
+        cursor: pointer;
+      }
+
+    }
+
+  }
+
+  .EditQuote {
+    button {
+      background-color: #5d5b8d;
+      border-radius: 10px;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      gap: 10px;
+    }
+
+  }
+}
